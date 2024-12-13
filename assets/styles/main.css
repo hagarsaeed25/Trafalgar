@@ -50,9 +50,11 @@ body{
 display: block;
 width: 150px;
 padding: 10px;
+margin-top:30px;
 color: var(--main-color);
 border: 1px solid var(--main-color);
 border-radius: 20px;
+text-align: center;
 }
 .section-title{
   position: relative;
@@ -77,6 +79,9 @@ a{
 }
 ul{
   list-style: none;
+}
+img{
+  width: 100%;
 }
 
 header{
@@ -111,6 +116,11 @@ text-align: center;
 }
 header .container nav input {
   appearance: none;
+}
+header nav ul li a:hover,
+header nav ul li .active
+{
+  color: var(--title-color);
 }
 @media (max-width:991px ){
   header nav {
@@ -150,10 +160,30 @@ header .container nav input {
   header nav ul {
     display: flex;
   }
+
   header nav ul li {
     padding: 10px;
   }
   header nav ul li a {
-    color: var(--black);
+    color: var(--text-color);
   }
+}
+.hero{
+  position: relative;
+}
+.hero .info {
+  margin-top: 60px;
+}
+@media (min-width:992px){
+  .hero .info ,
+  .hero .image {
+    width: 45%;
+  }
+}
+.hero h1{
+  font-size: var(--h1-size);
+}
+.hero a{
+  color: var(--white);
+  background-color: var(--main-color);
 }
